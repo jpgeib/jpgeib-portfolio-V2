@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import "./styles.css";
+import "./style.css";
 
 const getWindowDimensions = () => {
   const page = document.querySelector("html");
