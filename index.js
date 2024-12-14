@@ -11,7 +11,7 @@ const app = express();
 const server = require("http").createServer(app);
 const path = require("path");
 const routes = require("./routes");
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = ["http://localhost:3000", "http://localhost:3001", "https://www.jpgeib.dev"];
 const PORT = process.env.PORT || 3001;
 
 //Middlewares
