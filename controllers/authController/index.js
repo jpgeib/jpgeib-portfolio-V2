@@ -2,7 +2,7 @@ const db = require("../../config");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { v4: uuidv4 } = require("uuid");
-const sendEmail = require("../../utils/sendEmail");
+const sendEmail = require("../../utils/emails/sendEmail");
 const {
     getUserByEmail,
     getUserById,
@@ -10,7 +10,7 @@ const {
     setUserData,
     getUser,
     resetUserPassword
-} = require("../../models/users");
+} = require("../../models/auth");
 
 module.exports = {
     register: (req, res) => {

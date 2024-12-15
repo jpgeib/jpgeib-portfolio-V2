@@ -1,6 +1,6 @@
-const router = require("express").Router();
-const { upload, handleUpload } = require("../../../controllers/uploadController");
+// const router = require("express").Router();
+// const { upload, handleUpload } = require("../../../controllers/uploadController");
 
-router.post("/", upload, handleUpload);
+// router.post("/", upload, handleUpload);
 
-module.exports = router;
+// module.exports = router;
