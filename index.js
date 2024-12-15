@@ -1,4 +1,4 @@
-require("dot-env").config();
+require("dotenv").config();
 console.log(`NODE ENV at start: ${process.env.NODE_ENV}`);
 const express = require("express");
 const cors = require("cors");
@@ -41,6 +41,7 @@ if (process.env.NODE_ENV === "production") {
     });
 };
 
+console.log(`NODE ENV at end: ${process.env.NODE_ENV}`);
 server.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
