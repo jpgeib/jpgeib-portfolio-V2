@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
+import Home from "../../pages/Home";
 
 import "./style.css";
 
@@ -46,7 +47,9 @@ const App = () => {
 
   return (
     <>
-      <h1>App</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }

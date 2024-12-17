@@ -1,14 +1,15 @@
 import React from "react";
 import { Header } from "semantic-ui-react";
+import HomeAbout from "../../components/HomeAbout";
 
 import "./style.css";
 
-const About = () => {
+const Home = () => {
     return (
         <>
-            <Header as="h1" id="about-header">About</Header>
+            <HomeAbout />
         </>
     );
 };
 
-export default About;
+export default Home;
