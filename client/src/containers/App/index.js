@@ -1,6 +1,18 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../../pages/Home";
+import About from "../../pages/About";
+import Blog from "../../pages/Blog";
+import Contact from "../../pages/Contact";
+import Edit from "../../pages/Edit";
+import ForgotPassword from "../../pages/ForgotPassword";
+import Login from "../../pages/Login";
+import Register from "../../pages/Register";
+import ResetPassword from "../../pages/ResetPassword";
+import Portfolio from "../../pages/Portfolio";
+import Reviews from "../../pages/Reviews";
+import Review from "../../pages/Review";
+import Write from "../../pages/Write";
 
 import "./style.css";
 
@@ -49,6 +61,9 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/edit/:id" element={<Edit />} />
       </Routes>
     </>
   );
