@@ -64,6 +64,15 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/edit/:id" element={<Edit />} />
+        <Route path="/forgot" element={<ForgotPassword />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reset/:id/:token" element={<ResetPassword />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/review/:id" element={<Review />} />
+        <Route path="/write" element={<Write />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   );
