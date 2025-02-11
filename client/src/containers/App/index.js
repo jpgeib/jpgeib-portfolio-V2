@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Blog from "../../pages/Blog";
+import SingleBlog from "../../pages/SingleBlog";
 import Contact from "../../pages/Contact";
 import Edit from "../../pages/Edit";
 import ForgotPassword from "../../pages/ForgotPassword";
@@ -11,7 +12,7 @@ import Register from "../../pages/Register";
 import ResetPassword from "../../pages/ResetPassword";
 import Portfolio from "../../pages/Portfolio";
 import Reviews from "../../pages/Reviews";
-import Review from "../../pages/Review";
+import SingleReview from "../../pages/SingleReview";
 import Write from "../../pages/Write";
 
 import "./style.css";
@@ -62,6 +63,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<SingleBlog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/edit/:id" element={<Edit />} />
         <Route path="/forgot" element={<ForgotPassword />} />
@@ -70,7 +72,7 @@ const App = () => {
         <Route path="/reset/:id/:token" element={<ResetPassword />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/review/:id" element={<Review />} />
+        <Route path="/review/:id" element={<SingleReview />} />
         <Route path="/write" element={<Write />} />
         <Route path="/about" element={<About />} />
       </Routes>

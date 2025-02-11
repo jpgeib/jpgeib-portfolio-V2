@@ -3,12 +3,12 @@ import { Header } from "semantic-ui-react";
 
 import "./style.css";
 
-const Review = () => {
+const SingleReview = () => {
     return (
         <>
-            <Header as="h1" id="review-header">Review</Header>
+            <Header as="h1" id="review-header">Single Review</Header>
         </>
     );
 };
 
-export default Review;
+export default SingleReview;
