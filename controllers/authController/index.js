@@ -122,7 +122,11 @@ module.exports = {
     test: (req, res) => {
         try {
             console.log("Test route is working");
-            res.json("Test route works on heroku too");
+            db.query("SELECT * FROM test_db.test", (err, data) => {
+                if (err) return res.json(err);
+                res.json(data);
+                console.log(data);
+            });
         } catch (err) {
             console.log(err);
         };
