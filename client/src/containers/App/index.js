@@ -61,20 +61,20 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<SingleBlog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/edit/:id" element={<Edit />} />
-        <Route path="/forgot" element={<ForgotPassword />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/reset/:id/:token" element={<ResetPassword />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/review/:id" element={<SingleReview />} />
-        <Route path="/write" element={<Write />} />
-        <Route path="/about" element={<About />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/blog/:id" element={<SingleBlog />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/edit/:id" element={<Edit />} />
+        <Route exact path="/forgot" element={<ForgotPassword />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/reset/:id/:token" element={<ResetPassword />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/reviews" element={<Reviews />} />
+        <Route exact path="/review/:id" element={<SingleReview />} />
+        <Route exact path="/write" element={<Write />} />
+        <Route exact path="/about" element={<About />} />
       </Routes>
     </>
   );
