@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
+import { axiosInstance } from "../../utils/api";
+import Navbar from "../../components/Navbar";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Blog from "../../pages/Blog";
@@ -60,6 +62,7 @@ const App = () => {
 
   return (
     <>
+      <Navbar screenWidth={width} />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/blog" element={<Blog />} />
