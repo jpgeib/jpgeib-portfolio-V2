@@ -13,7 +13,7 @@ const HomeAbout = () => {
                     <Divider />
                     <p>
                         Hello, and thank you for visiting my corner of the web! My name is James Geib,
-                        a Full-Stack React Developer with over 4 years of experience crafting intuitive
+                        a Full-Stack React Developer with over 5 years of experience crafting intuitive
                         and responsive web applications. My passion lies in creating seamless digital experiences,
                         blending technical expertise with creativity to bring ideas to life.
                     </p>
