@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import { axiosInstance } from "../../utils/api";
+import { AuthContext } from "../../context/authContext";
 import Navbar from "../../components/Navbar";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
@@ -42,23 +43,10 @@ const useWindowDimensions = () => {
   return windowDimensions;
 };
 
-export const useCurrentUrl = () => {
-  const [currentUrl, setCurrentUrl] = useState(window.location.href);
-
-  useEffect(() => {
-    const handlePageLoad = () => {
-      setCurrentUrl(window.location.href);
-    }
-    window.addEventListener("load", handlePageLoad);
-    return window.removeEventListener("load", handlePageLoad);
-  }, []);
-
-  return currentUrl;
-};
-
 const App = () => {
 
   const { width } = useWindowDimensions();
+  const auth = useContext(AuthContext);
 
   return (
     <>
